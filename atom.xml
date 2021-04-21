@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://thelightfor-pds.github.io</id>
-    <title>田志恒的博客</title>
-    <updated>2021-04-21T11:18:18.061Z</updated>
+    <title>田志恒の博客</title>
+    <updated>2021-04-21T11:21:30.617Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://thelightfor-pds.github.io"/>
     <link rel="self" href="https://thelightfor-pds.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>欲买桂花同载酒，终不似，少年游</subtitle>
     <logo>https://thelightfor-pds.github.io/images/avatar.png</logo>
     <icon>https://thelightfor-pds.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 田志恒的博客</rights>
+    <rights>All rights reserved 2021, 田志恒の博客</rights>
     <entry>
         <title type="html"><![CDATA[Girdea 更换主题]]></title>
         <id>https://thelightfor-pds.github.io/post/girdea-geng-huan-zhu-ti/</id>
