@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://thelightfor-pds.github.io</id>
     <title>田志恒的博客</title>
-    <updated>2021-04-20T11:56:20.410Z</updated>
+    <updated>2021-04-21T02:19:20.962Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://thelightfor-pds.github.io"/>
     <link rel="self" href="https://thelightfor-pds.github.io/atom.xml"/>
@@ -10,6 +10,49 @@
     <logo>https://thelightfor-pds.github.io/images/avatar.png</logo>
     <icon>https://thelightfor-pds.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 田志恒的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[## Girdea 更换主题]]></title>
+        <id>https://thelightfor-pds.github.io/post/girdea-geng-huan-zhu-ti/</id>
+        <link href="https://thelightfor-pds.github.io/post/girdea-geng-huan-zhu-ti/">
+        </link>
+        <updated>2021-04-21T02:12:24.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="1进入girdea进入主题项单击下拉框底部的更多主题">1.进入Girdea,进入主题项，单击下拉框底部的更多主题</h4>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421092237300.png" alt="image-20210421092237300" loading="lazy"></figure>
+<h6 id="如图所示">如图所示：</h6>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421092438088.png" alt="image-20210421092438088" loading="lazy"></figure>
+<h4 id="2选择你喜欢的主题单击即可进入其公开的github仓库">2.选择你喜欢的主题，单击即可进入其公开的github仓库</h4>
+<p>（在这里以 “凛” 作为案例）</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421093106412.png" alt="image-20210421093106412" loading="lazy"></figure>
+<p>预览界面就不展示了，接下来直接进入github仓库，下载主题压缩包</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421093840580.png" alt="image-20210421093840580" loading="lazy"></figure>
+<h4 id="3解压安装包把主题文件夹复制到源文件目录下的theme目录下">3.解压安装包，把主题文件夹复制到源文件目录下的theme目录下</h4>
+<p>（ps：例如文件夹的名字是gridea-theme-lin-master，前两个是目录名，lin是主题名，master是github仓库的分支名，重点是能分清主题名即可）</p>
+<p>解压压缩包后打开，如图所示：</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421094338889.png" alt="image-20210421094338889" loading="lazy"></figure>
+<p>那么我们知道了lin才是主题的名字，而该目录下并没有，表示作者没有把主题文件都放到以主题名命名的子文件夹下</p>
+<p><strong>若没有子文件夹，就把整个解压文件夹全粘贴过去</strong></p>
+<p>如果我的表述不明确，请看：</p>
+<p>应该是——gridea-theme-lin-master / lin /  ”各种主题文件“</p>
+<p>现在是——gridea-theme-lin-master / ”各种主题文件“</p>
+<p>明确了这些，剩下的就该把文件夹放到Girdea的源文件路径下的theme下就可以了</p>
+<p>那么问题来了，源文件路径 = 安装Girdea的路径吗？，很显然，你打开安装路径一看，里面并没有theme文件夹啊</p>
+<p>那是因为很重要的一步被小编我忘掉了！哈哈哈</p>
+<p>现在打开Girdea软件，左下角有一个设置的图标，单击进入如下图界面</p>
+<figure data-type="image" tabindex="6"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421095513906.png" alt="image-20210421095513906" loading="lazy"></figure>
+<p>然后把文件夹复制过去就可以了（注意是有assets、templates文件夹的上层文件夹）</p>
+<h4 id="4主题的应用及相关配置">4.主题的应用及相关配置</h4>
+<p>刚才修改路径打开了Girdea，现在把它关掉再重新打开（加载速度缓慢，请耐心等待）</p>
+<p>进入主题界面，下拉框内就会出现我们刚刚解压的主题（只显示主题名）</p>
+<p>更换主题后，单击右下角保存！否则可能会有问题</p>
+<p>每个主题的自定义配置都不尽相同，一般网页的图片都可以自定义，单击保存即可预览</p>
+<p>若是喜欢这个主题，可以单击左下角的同步，之后你的网站也会应用相同的主题</p>
+<p>成功之后预览的效果应该和<a href="thelightfor-pds.github.io">小编的博客</a>是差不多的</p>
+<figure data-type="image" tabindex="7"><img src="https://gitee.com/tzhiheng/image/raw/master/image/323740.jpg" alt="323740" loading="lazy"></figure>
+<p>欢迎在下方留言！</p>
+<p>温馨提示：按部就班的按照步骤也可能会出现问题，毕竟小编一次就成功了，哈哈哈！</p>
+<p>​                    “在实践中寻找真理，在失败中寻找方向”，要加油噢！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Girdea 的远程部署]]></title>
         <id>https://thelightfor-pds.github.io/post/girdea-de-yuan-cheng-bu-shu/</id>

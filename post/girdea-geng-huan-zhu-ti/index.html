@@ -50,32 +50,46 @@
         <main id="main" class="site-main" role="main">
             <article id="post-1270" class="post-1270 post type-post status-publish format-standard hentry category-90 category-129 tag-149">
                 <header class="entry-header">
-                    <h1 class="entry-title">Girdea 的远程部署</h1>
-                    <p class="entry-census">发布于 2021-04-20</p>
+                    <h1 class="entry-title">## Girdea 更换主题</h1>
+                    <p class="entry-census">发布于 2021-04-21</p>
                     <hr>
                 </header>
                 <div class="neko">
-                    <p>（目前只介绍Github Pages的基础配置）</p>
-<h4 id="11-创建一个github账户">1.1 创建一个github账户</h4>
-<p><a href="https://github.com/getgridea/gridea">Github</a></p>
-<p>（本部分不过多赘述，Sign up创建一个账户，建议用户名尽量短、好记）</p>
-<h4 id="12-创建github分配的域名仓库">1.2 创建github分配的域名仓库</h4>
-<p>[注：当你创建github账户的时候，官方会默认分配给你一个域名，也就是网站的网址</p>
-<p>格式是：用户名.github.io，也就是说部署成功后，所有人都可以通过这个域名访问你的网站]</p>
-<p>!<img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210420111046590.png" alt="image-20210420111046590" style="zoom: 67%;" /></p>
-<p>如图所示：</p>
-<img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210420111337745.png" alt="image-20210420111337745" style="zoom: 67%;" />
-<h4 id="13-生成令牌">1.3 生成令牌</h4>
-<img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210420111845779.png" alt="image-20210420111845779" style="zoom: 67%;" />
-<p>页面跳转后，复制Token，回到软件，选择远程</p>
-<img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210420112224834.png" alt="image-20210420112224834" style="zoom: 67%;" />
-<p>（单击保存后，先进行①，后进行②，如果显示同步成功，过几分钟后，即可用域名访问你的网站啦）</p>
-<p>[注：如果检测远程连接错误，则删除仓库后，重新创建</p>
-<p>​          如果检测到同步错误，则重新获取令牌重试。ps：如果只是同步出错，多试几次即可，服务器不太稳定]</p>
-<p><strong>删除仓库示例</strong></p>
-<img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210420112611755.png" alt="image-20210420112611755" style="zoom: 50%;" />
-<img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210420112900672.png" alt="image-20210420112900672" style="zoom: 50%;" />
-<p>详情请访问小编的网站哦！www.thelightfor-pds.github.io</p>
+                    <h4 id="1进入girdea进入主题项单击下拉框底部的更多主题">1.进入Girdea,进入主题项，单击下拉框底部的更多主题</h4>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421092237300.png" alt="image-20210421092237300" loading="lazy"></figure>
+<h6 id="如图所示">如图所示：</h6>
+<figure data-type="image" tabindex="2"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421092438088.png" alt="image-20210421092438088" loading="lazy"></figure>
+<h4 id="2选择你喜欢的主题单击即可进入其公开的github仓库">2.选择你喜欢的主题，单击即可进入其公开的github仓库</h4>
+<p>（在这里以 “凛” 作为案例）</p>
+<figure data-type="image" tabindex="3"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421093106412.png" alt="image-20210421093106412" loading="lazy"></figure>
+<p>预览界面就不展示了，接下来直接进入github仓库，下载主题压缩包</p>
+<figure data-type="image" tabindex="4"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421093840580.png" alt="image-20210421093840580" loading="lazy"></figure>
+<h4 id="3解压安装包把主题文件夹复制到源文件目录下的theme目录下">3.解压安装包，把主题文件夹复制到源文件目录下的theme目录下</h4>
+<p>（ps：例如文件夹的名字是gridea-theme-lin-master，前两个是目录名，lin是主题名，master是github仓库的分支名，重点是能分清主题名即可）</p>
+<p>解压压缩包后打开，如图所示：</p>
+<figure data-type="image" tabindex="5"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421094338889.png" alt="image-20210421094338889" loading="lazy"></figure>
+<p>那么我们知道了lin才是主题的名字，而该目录下并没有，表示作者没有把主题文件都放到以主题名命名的子文件夹下</p>
+<p><strong>若没有子文件夹，就把整个解压文件夹全粘贴过去</strong></p>
+<p>如果我的表述不明确，请看：</p>
+<p>应该是——gridea-theme-lin-master / lin /  ”各种主题文件“</p>
+<p>现在是——gridea-theme-lin-master / ”各种主题文件“</p>
+<p>明确了这些，剩下的就该把文件夹放到Girdea的源文件路径下的theme下就可以了</p>
+<p>那么问题来了，源文件路径 = 安装Girdea的路径吗？，很显然，你打开安装路径一看，里面并没有theme文件夹啊</p>
+<p>那是因为很重要的一步被小编我忘掉了！哈哈哈</p>
+<p>现在打开Girdea软件，左下角有一个设置的图标，单击进入如下图界面</p>
+<figure data-type="image" tabindex="6"><img src="https://gitee.com/tzhiheng/image/raw/master/image/image-20210421095513906.png" alt="image-20210421095513906" loading="lazy"></figure>
+<p>然后把文件夹复制过去就可以了（注意是有assets、templates文件夹的上层文件夹）</p>
+<h4 id="4主题的应用及相关配置">4.主题的应用及相关配置</h4>
+<p>刚才修改路径打开了Girdea，现在把它关掉再重新打开（加载速度缓慢，请耐心等待）</p>
+<p>进入主题界面，下拉框内就会出现我们刚刚解压的主题（只显示主题名）</p>
+<p>更换主题后，单击右下角保存！否则可能会有问题</p>
+<p>每个主题的自定义配置都不尽相同，一般网页的图片都可以自定义，单击保存即可预览</p>
+<p>若是喜欢这个主题，可以单击左下角的同步，之后你的网站也会应用相同的主题</p>
+<p>成功之后预览的效果应该和<a href="thelightfor-pds.github.io">小编的博客</a>是差不多的</p>
+<figure data-type="image" tabindex="7"><img src="https://gitee.com/tzhiheng/image/raw/master/image/323740.jpg" alt="323740" loading="lazy"></figure>
+<p>欢迎在下方留言！</p>
+<p>温馨提示：按部就班的按照步骤也可能会出现问题，毕竟小编一次就成功了，哈哈哈！</p>
+<p>​                    “在实践中寻找真理，在失败中寻找方向”，要加油噢！</p>
 
                 </div>
             </article>
@@ -85,20 +99,14 @@
         <div class="mdui-container">
             <div class="mdui-row">
                 
-                <a href="https://thelightfor-pds.github.io/post/girdea-geng-huan-zhu-ti/" class="mdui-ripple mdui-color-theme mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
-                    <div class="doc-footer-nav-text">
-                        <i class="mdui-icon material-icons">arrow_back</i>
-                        <span class="doc-footer-nav-direction mdui-hidden-xs-down">上一篇文章</span>
-                        <div class="doc-footer-nav-chapter mdui-hidden-xs-down">## Girdea 更换主题</div>
-                    </div>
-                </a>
+                <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
                 
                 
-                <a href="https://thelightfor-pds.github.io/post/girdea-an-zhuang-ji-pei-zhi-jin-zai-ben-di/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+                <a href="https://thelightfor-pds.github.io/post/girdea-de-yuan-cheng-bu-shu/" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
                     <div class="doc-footer-nav-text">
                         <i class="mdui-icon material-icons">arrow_forward</i>
                         <span class="doc-footer-nav-direction">下一篇文章</span>
-                        <div class="doc-footer-nav-chapter">### Girdea 安装及配置（仅在本地）</div>
+                        <div class="doc-footer-nav-chapter">Girdea 的远程部署</div>
                     </div>
                 </a>
                 
