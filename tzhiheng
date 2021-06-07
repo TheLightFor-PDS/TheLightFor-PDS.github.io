@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				position: relative;
+				margin: 200px auto;
+				transform-style: preserve-3d;
+				animation: zhuanquan 100s linear infinite;
+			}
+			.box > div{
+				width: 200px;
+				height: 200px;
+				border: 1px solid #333;
+				/*transform-style: preserve-3d;*/
+				
+				position: absolute;
+				opacity: 0.5;  /*透明度*/
+			}
+			.box > ul > li{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #333;
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				opacity: 1;  /*透明度*/
+			}
+			/*前部后部*/
+			.box > div:nth-child(1){
+				transform: translateZ(100px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+				animation: box1 2s infinite;
+			}
+			.box > div:nth-child(2){
+				transform:rotateY(180deg) translateZ(100px) ;
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+				animation: box2 2s infinite;
+			}
+			/*顶部底部*/
+			.box > div:nth-child(3){
+				transform:rotateX(90deg) translateZ(100px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+				animation: box3 2s infinite;
+			}
+			.box > div:nth-child(4){
+				transform:rotateX(-90deg) translateZ(100px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+				animation: box4 2s infinite;
+			}
+			/*左部右部*/
+			.box > div:nth-child(5){
+				transform:rotateY(90deg) translateZ(100px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+				animation: box5 2s infinite;
+			}
+			.box > div:nth-child(6){
+				transform:rotateY(-90deg) translateZ(100px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+				animation: box6 2s infinite;
+			}
+			/*内盒子*/
+			.box > ul> li:nth-child(1){
+				transform: translateZ(50px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+			}
+			.box > ul> li:nth-child(2){
+				transform:rotateY(-180deg) translateZ(50px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+			}
+			
+			.box > ul> li:nth-child(3){
+				transform:rotateX(90deg) translateZ(50px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+			}
+			.box > ul> li:nth-child(4){
+				transform:rotateX(-90deg) translateZ(50px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+			}
+			.box > ul> li:nth-child(5){
+				transform:rotateY(90deg) translateZ(50px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+			}
+			.box > ul> li:nth-child(6){
+				transform:rotateY(-90deg) translateZ(50px);
+				background: url(tzh.jpg) no-repeat;
+				background-size:100% 100%;
+			}
+			/*定义一个动画*/
+			@keyframes zhuanquan{
+				from{
+					transform: rotateX(-30deg) rotateY(0deg);
+					
+				}
+				to{
+					transform: rotateX(-30deg) rotateY(-3600deg);
+				}
+			}
+			@keyframes box1{
+				from{
+					
+				}
+				50%{
+					transform: translateZ(200px);
+				}
+				100%{
+					transform: translateZ(100px);
+				}
+			}
+			@keyframes box2{
+				from{
+					
+				}
+				50%{
+					transform: rotateY(180deg) translateZ(200px);
+				}
+				100%{
+				}
+			}
+			@keyframes box3{
+				from{
+					
+				}
+				50%{
+					transform: rotateX(90deg) translateZ(200px);
+				}
+				100%{
+				}
+			}
+			@keyframes box4{
+				from{
+					
+				}
+				50%{
+					transform: rotateX(-90deg) translateZ(200px);
+				}
+				100%{
+				}
+			}
+			@keyframes box5{
+				from{
+					
+				}
+				50%{
+					transform:rotateY(90deg) translateZ(200px);
+				}
+				100%{
+				}
+			}
+			@keyframes box6{
+				from{
+					
+				}
+				50%{
+					transform:rotateY(-90deg) translateZ(200px);
+				}
+				100%{
+				}
+			}
+			
+			/*.box:hover .box1{
+				transform: translateZ(200px);
+			}
+			.box:hover .box2{
+				transform: translateZ(-200px);
+			}
+			.box:hover .box3{
+				transform: rotateX(90deg) translateZ(200px);
+			}
+			.box:hover .box4{
+				transform: rotateX(90deg) translateZ(-200px);
+			}
+			.box:hover .box5{
+				transform:rotateY(90deg) translateZ(200px);
+			}
+			.box:hover .box6{
+				transform:rotateY(-90deg) translateZ(200px);
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1">1</div>
+			<div class="box2">2</div>
+			<div class="box3">3</div>
+			<div class="box4">4</div>
+			<div class="box5">5</div>
+			<div class="box6">6</div>
+			<ul>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+			</ul>
+		</div>
+		<audio src="黑武士--林俊杰.mp3" controls="controls"></audio>
+	</body>
+</html>
